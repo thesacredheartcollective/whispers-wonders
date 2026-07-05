@@ -20,7 +20,7 @@ export default function Home() {
             Whispers & Wonders
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--ww-body)" }}>
-            A mystical tarot and spiritual wellness companion for Florida's Tampa Bay area — interactive card readings, a local metaphysical directory, moon phase rituals, and crystal pairings.
+            A global tarot and spiritual wellness community—with a curated guide to Tampa Bay's metaphysical and wellness resources.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/cards" className="ww-btn px-6 py-3 rounded-full text-sm no-underline">
@@ -37,8 +37,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Global Welcome Callout */}
+      <section className="py-12 md:py-16" style={{ background: "var(--ww-surface)" }}>
+        <div className="container max-w-3xl mx-auto">
+          <div
+            className="p-6 md:p-8 rounded-xl"
+            style={{ background: "var(--ww-card)", border: "1px solid var(--ww-divider)" }}
+          >
+            <h2 className="text-xl md:text-2xl mb-4" style={{ color: "var(--ww-gold)" }}>
+              Wherever you are, you're welcome here.
+            </h2>
+            <p className="text-sm md:text-base leading-relaxed" style={{ color: "var(--ww-body)" }}>
+              Enjoy daily tarot, card readings, and spiritual resources from anywhere in the world. If you're in the Tampa Bay area, you'll also find a curated directory of local metaphysical shops, readers, events, and wellness businesses.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Card of the Moment */}
-      <section className="py-16" style={{ background: "var(--ww-surface)" }}>
+      <section className="py-16">
         <div className="container text-center">
           <h2 className="text-2xl md:text-3xl mb-2" style={{ color: "var(--ww-gold)" }}>
             Card of the Moment
@@ -74,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-16">
+      <section className="py-16" style={{ background: "var(--ww-surface)" }}>
         <div className="container">
           <h2 className="text-2xl md:text-3xl text-center mb-10" style={{ color: "var(--ww-cream)" }}>
             Explore
@@ -107,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Blog Preview */}
-      <section className="py-16" style={{ background: "var(--ww-surface)" }}>
+      <section className="py-16">
         <div className="container text-center">
           <h2 className="text-2xl md:text-3xl mb-4" style={{ color: "var(--ww-cream)" }}>
             From the Blog
