@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Royal Suzie",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "A crystal, herb, tea, and tarot shop offering readings and spiritual guidance. Carries a wide selection of crystals, books, oracle decks, jewelry, and incense.",
+    "categories": [
+      "Spiritual Shops",
+      "Crystals & Gems",
+      "Tarot & Readings"
+    ]
+  },
+  {
+    "name": "The Garden Within",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "A highly rated spiritual shop focused on crystals and healing products, with a warm and welcoming atmosphere for seekers of all levels.",
+    "categories": [
+      "Spiritual Shops",
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "We Rock Rocks",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "Specialists in jewelry, gemstones, and minerals. A go-to spot for collectors and crystal lovers seeking quality specimens.",
+    "categories": [
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Raven's Moon",
+    "city": "Brandon",
+    "county": "Hillsborough",
+    "description": "A spiritual shop offering a variety of metaphysical items, from candles and incense to tools for ritual and reflection.",
+    "categories": [
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Angel Heart New Age Gifts",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "A holistic well-being shop carrying crystals, gemstones, herbs, jewelry, candles, and incense to support your spiritual practice.",
+    "categories": [
+      "Spiritual Shops",
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Mystikal Scents",
+    "city": "Thonotosassa",
+    "county": "Hillsborough",
+    "description": "Offering Reiki, psychic readings, and metaphysical supplies. A welcoming space for energy work and spiritual guidance.",
+    "categories": [
+      "Wellness & Reiki",
+      "Tarot & Readings",
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Botanica Aragba Yomilo",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "A highly rated spiritual shop offering botanica supplies, candles, and items for traditional spiritual practice.",
+    "categories": [
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Soul Essence Crystals",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "description": "A crystal and wellness-focused shop curating stones for healing, intention, and everyday grounding.",
+    "categories": [
+      "Crystals & Gems",
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "Wander Love Shop Crystals",
+    "city": "Hillsborough County",
+    "county": "Hillsborough",
+    "description": "A home-based crystal business offering hand-selected stones and a personal, intentional shopping experience.",
+    "categories": [
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Mystic Goddess",
+    "city": "Largo / Tampa Area",
+    "county": "Hillsborough",
+    "description": "A spiritual shop with on-site psychics offering readings, classes, and a deep selection of metaphysical goods.",
+    "categories": [
+      "Spiritual Shops",
+      "Tarot & Readings"
+    ]
+  },
+  {
+    "name": "The Looking Glass",
+    "city": "St. Petersburg",
+    "county": "Pinellas",
+    "description": "Located on Central Ave, known for crystals, jewelry, psychic readings, and Reiki. A vibrant downtown destination for spiritual seekers.",
+    "categories": [
+      "Crystals & Gems",
+      "Tarot & Readings",
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "Christy's Enchanted Notions",
+    "city": "St. Pete Beach",
+    "county": "Pinellas",
+    "description": "Offering psychic readings, jewelry, and a curated spiritual shop near the beach \u2014 a magical stop along the coast.",
+    "categories": [
+      "Tarot & Readings",
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Crystals and Magic",
+    "city": "St. Petersburg",
+    "county": "Pinellas",
+    "description": "Opened in July 2024, featuring handmade jewelry, exotic stones, crystals, incense, and books for the modern mystic.",
+    "categories": [
+      "Crystals & Gems",
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Enchanted Spirits",
+    "city": "Dunedin",
+    "county": "Pinellas",
+    "description": "A jewelry and spiritual shop with on-site psychics, set in the charming downtown of Dunedin.",
+    "categories": [
+      "Spiritual Shops",
+      "Tarot & Readings",
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Seer \u2014 Metaphysical Supplies",
+    "city": "Clearwater",
+    "county": "Pinellas",
+    "description": "A spiritual shop with a wide range of metaphysical tools, from crystals and tarot to ritual supplies and books.",
+    "categories": [
+      "Spiritual Shops",
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Temple de la Luna",
+    "city": "Clearwater",
+    "county": "Pinellas",
+    "description": "A moon-themed spiritual shop offering ritual goods, crystals, and tools for lunar-aligned practice.",
+    "categories": [
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Celestial Circle",
+    "city": "Palm Harbor",
+    "county": "Pinellas",
+    "description": "Offering psychic readings and metaphysical items in a serene Palm Harbor setting.",
+    "categories": [
+      "Tarot & Readings",
+      "Spiritual Shops"
+    ]
+  },
+  {
+    "name": "Talia Moon Botanica",
+    "city": "St. Pete Beach",
+    "county": "Pinellas",
+    "description": "Henna artistry, herbal goods, and a spiritual shop blending beauty, plant medicine, and ritual.",
+    "categories": [
+      "Spiritual Shops",
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "Enchanted Treasures Trading Co.",
+    "city": "Seminole",
+    "county": "Pinellas",
+    "description": "A metaphysical resale store full of treasures \u2014 crystals, decks, and curiosities waiting to be rehomed.",
+    "categories": [
+      "Spiritual Shops",
+      "Crystals & Gems"
+    ]
+  },
+  {
+    "name": "Pura Vida Wellness Center",
+    "city": "Clearwater",
+    "county": "Pinellas",
+    "description": "A highly rated wellness center offering holistic services to restore balance to body and spirit.",
+    "categories": [
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "H2Oasis Wellness Center",
+    "city": "Pinellas Park",
+    "county": "Pinellas",
+    "description": "Wellness infusions supporting immunity, hydration, and recovery from fatigue in a calming environment.",
+    "categories": [
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "Champion Wellness Centers",
+    "city": "Clearwater",
+    "county": "Pinellas",
+    "description": "Chiropractic and general wellness care with a focus on whole-body alignment and vitality.",
+    "categories": [
+      "Wellness & Reiki"
+    ]
+  },
+  {
+    "name": "Wellness Center of Palm Harbor",
+    "city": "Palm Harbor",
+    "county": "Pinellas",
+    "description": "Wellness classes and services designed to nurture mind-body connection and ongoing self-care.",
+    "categories": [
+      "Wellness & Reiki"
+    ]
+  }
+]

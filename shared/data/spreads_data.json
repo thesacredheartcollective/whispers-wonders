@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "one-card-daily",
+    "name": "One-Card Daily Pull",
+    "summary": "A single card to set your intention and focus for the day ahead.",
+    "bestFor": "Morning intention, quick check-ins, daily journaling.",
+    "cardCount": 1
+  },
+  {
+    "slug": "three-card",
+    "name": "Past \u00b7 Present \u00b7 Future",
+    "summary": "The classic three-card spread tracing the arc of a situation through time.",
+    "bestFor": "General readings, understanding how a situation is evolving.",
+    "cardCount": 3
+  },
+  {
+    "slug": "celtic-cross",
+    "name": "Celtic Cross",
+    "summary": "A comprehensive ten-card spread for deep insight into a complex question.",
+    "bestFor": "Major life questions, layered situations needing full context.",
+    "cardCount": 10
+  },
+  {
+    "slug": "new-moon",
+    "name": "New Moon Intention Spread",
+    "summary": "Four cards to clarify and plant intentions at the start of a lunar cycle.",
+    "bestFor": "New moon rituals, fresh starts, goal-setting.",
+    "cardCount": 4
+  },
+  {
+    "slug": "full-moon-release",
+    "name": "Full Moon Release Spread",
+    "summary": "Three cards for letting go and celebrating at the peak of the lunar cycle.",
+    "bestFor": "Full moon rituals, releasing, gratitude.",
+    "cardCount": 3
+  },
+  {
+    "slug": "decision-making",
+    "name": "Decision-Making Spread",
+    "summary": "Five cards to weigh a choice and reveal the path toward clarity.",
+    "bestFor": "Crossroads, weighing two options, gaining perspective.",
+    "cardCount": 5
+  },
+  {
+    "slug": "love-relationship",
+    "name": "Love & Relationship Spread",
+    "summary": "Seven cards exploring the heart of a connection and its potential.",
+    "bestFor": "Romantic relationships, partnerships, reconnecting.",
+    "cardCount": 7
+  },
+  {
+    "slug": "career-purpose",
+    "name": "Career & Purpose Spread",
+    "summary": "Five cards to illuminate your work, calling, and next steps.",
+    "bestFor": "Career decisions, finding purpose, professional growth.",
+    "cardCount": 5
+  },
+  {
+    "slug": "shadow-work",
+    "name": "Shadow Work Spread",
+    "summary": "Four cards for compassionate inner work and integration.",
+    "bestFor": "Healing, self-reflection, working with difficult emotions.",
+    "cardCount": 4
+  },
+  {
+    "slug": "year-ahead",
+    "name": "Year Ahead Spread",
+    "summary": "Twelve cards \u2014 one for each month \u2014 to map the energy of the year.",
+    "bestFor": "New Year, birthdays, long-range planning.",
+    "cardCount": 12
+  }
+]

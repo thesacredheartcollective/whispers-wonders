@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fullmoon-market-stpete",
+    "title": "Full Moon Night Market",
+    "cadence": "Monthly \u00b7 around each full moon",
+    "location": "Local makers & metaphysical vendors",
+    "city": "St. Petersburg",
+    "category": "Market",
+    "description": "An evening market timed to the full moon, featuring crystal vendors, tarot readers, handmade ritual goods, and live music under the stars."
+  },
+  {
+    "id": "new-moon-circle",
+    "title": "New Moon Intention Circle",
+    "cadence": "Monthly \u00b7 around each new moon",
+    "location": "Community spiritual centers",
+    "city": "Tampa",
+    "category": "Circle & Ritual",
+    "description": "A guided gathering to set intentions for the new lunar cycle, with meditation, journaling, and a shared tarot pull."
+  },
+  {
+    "id": "reiki-share",
+    "title": "Community Reiki Share",
+    "cadence": "Weekly / Bi-weekly",
+    "location": "Wellness centers",
+    "city": "Clearwater",
+    "category": "Sound & Healing",
+    "description": "An open Reiki share where practitioners and curious beginners exchange gentle energy work in a supportive circle."
+  },
+  {
+    "id": "sound-bath",
+    "title": "Crystal Bowl Sound Bath",
+    "cadence": "Weekly",
+    "location": "Yoga & wellness studios",
+    "city": "Dunedin",
+    "category": "Sound & Healing",
+    "description": "A restorative sound bath using crystal singing bowls to guide deep relaxation and nervous-system reset."
+  },
+  {
+    "id": "tarot-101",
+    "title": "Tarot 101 Workshop",
+    "cadence": "Monthly",
+    "location": "Metaphysical shops",
+    "city": "St. Petersburg",
+    "category": "Workshop",
+    "description": "A beginner-friendly workshop covering the structure of the deck, reading three-card spreads, and building intuition."
+  },
+  {
+    "id": "crystal-grids-workshop",
+    "title": "Crystal Grids & Intention Workshop",
+    "cadence": "Seasonally",
+    "location": "Crystal shops",
+    "city": "Tampa",
+    "category": "Workshop",
+    "description": "Learn to build crystal grids aligned with sacred geometry to amplify and focus your intentions."
+  },
+  {
+    "id": "psychic-fair",
+    "title": "Tampa Bay Psychic & Holistic Fair",
+    "cadence": "Quarterly",
+    "location": "Event halls & expo spaces",
+    "city": "Tampa Bay Area",
+    "category": "Market",
+    "description": "A gathering of readers, healers, and holistic vendors offering readings, energy work, and metaphysical goods."
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "philippe-park",
+    "name": "Philippe Park",
+    "city": "Safety Harbor",
+    "county": "Pinellas",
+    "significance": "Home to the Safety Harbor Mound, a Tocobaga ceremonial site dating back centuries. The ancient oaks and waterfront make it a place of deep ancestral resonance.",
+    "bestTime": "Sunrise, when the bay is still and the light gathers in the oaks.",
+    "ritual": "Offer a quiet moment of gratitude to the land and those who came before. Sit beneath an oak and ground.",
+    "lat": 28.0203,
+    "lng": -82.6884
+  },
+  {
+    "id": "weedon-island",
+    "name": "Weedon Island Preserve",
+    "city": "St. Petersburg",
+    "county": "Pinellas",
+    "significance": "A 3,700-acre coastal preserve with mangroves, ancient shell mounds, and boardwalk trails \u2014 a sanctuary for reflection and birdsong.",
+    "bestTime": "Golden hour, paddling or walking the boardwalk as herons settle.",
+    "ritual": "Walk the boardwalk slowly as a moving meditation. Release a worry into the tide with each exhale.",
+    "lat": 27.8506,
+    "lng": -82.6038
+  },
+  {
+    "id": "honeymoon-island",
+    "name": "Honeymoon Island State Park",
+    "city": "Dunedin",
+    "county": "Pinellas",
+    "significance": "Pristine Gulf beaches and a rare virgin slash pine forest. The osprey nests and open horizon invite spaciousness and renewal.",
+    "bestTime": "Sunset, when the Gulf turns to molten gold.",
+    "ritual": "Collect a single shell as a talisman of an intention you are calling in. Charge it under the setting sun.",
+    "lat": 28.0689,
+    "lng": -82.8262
+  },
+  {
+    "id": "lettuce-lake-park",
+    "name": "Lettuce Lake Park",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "significance": "A cypress wetland along the Hillsborough River with a boardwalk and observation tower \u2014 a lush, green place of quiet immersion.",
+    "bestTime": "Early morning mist, when the cypress knees rise from still water.",
+    "ritual": "Practice forest bathing along the boardwalk; let the green canopy soften your nervous system.",
+    "lat": 28.0769,
+    "lng": -82.3741
+  },
+  {
+    "id": "lithia-springs",
+    "name": "Lithia Springs",
+    "city": "Lithia",
+    "county": "Hillsborough",
+    "significance": "A natural spring whose clear, constant 72\u00b0 waters have drawn people seeking renewal for generations.",
+    "bestTime": "Late morning, when sunlight filters through the canopy onto the spring.",
+    "ritual": "A mindful cleansing dip or a simple hand-to-water blessing to release and renew.",
+    "lat": 27.8631,
+    "lng": -82.2236
+  },
+  {
+    "id": "ballast-point-pier",
+    "name": "Ballast Point Park & Pier",
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "significance": "A historic waterfront point reaching into Hillsborough Bay \u2014 an open vantage for moonrise, water gazing, and reflection.",
+    "bestTime": "Full moon rise over the bay.",
+    "ritual": "A full-moon water-gazing meditation; charge a small crystal in the moonlight reflected on the bay.",
+    "lat": 27.8917,
+    "lng": -82.4861
+  }
+]

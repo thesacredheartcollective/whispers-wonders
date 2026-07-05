@@ -2,9 +2,10 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
+import { notifyOwner } from "./_core/notification";
+import { z } from "zod";
 
 export const appRouter = router({
-    // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
@@ -17,12 +18,26 @@ export const appRouter = router({
     }),
   }),
 
-  // TODO: add feature routers here, e.g.
-  // todo: router({
-  //   list: protectedProcedure.query(({ ctx }) =>
-  //     db.getUserTodos(ctx.user.id)
-  //   ),
-  // }),
+  contact: router({
+    submit: publicProcedure
+      .input(z.object({
+        name: z.string().min(1).max(200),
+        email: z.string().email().max(320),
+        subject: z.string().min(1).max(500),
+        message: z.string().min(1).max(5000),
+      }))
+      .mutation(async ({ input }) => {
+        const { name, email, subject, message } = input;
+        
+        // Notify the site owner via the built-in notification system
+        await notifyOwner({
+          title: `New Contact Form: ${subject}`,
+          content: `From: ${name} (${email})\n\nSubject: ${subject}\n\n${message}`,
+        });
+
+        return { success: true } as const;
+      }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;
