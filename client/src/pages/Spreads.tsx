@@ -1,5 +1,6 @@
 import { spreads } from "@/data";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function Spreads() {
@@ -7,9 +8,14 @@ export default function Spreads() {
 
   return (
     <>
+      <SEO 
+        title="Tarot Spreads"
+        description="Explore ten curated tarot spread layouts, from simple daily pulls to the full Celtic Cross. Includes position meanings and interpretation guidance."
+        canonical="/spreads"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Spreads", url: "https://www.thesoftheartcollective.com/spreads" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Spreads", url: "https://thesoftheartcollective.com/spreads" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

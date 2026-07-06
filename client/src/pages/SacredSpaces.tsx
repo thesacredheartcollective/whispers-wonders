@@ -1,5 +1,6 @@
 import { sacredSpaces } from "@/data";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function SacredSpaces() {
@@ -7,9 +8,14 @@ export default function SacredSpaces() {
 
   return (
     <>
+      <SEO 
+        title="Sacred Spaces"
+        description="Discover six natural sanctuaries and sacred sites in Tampa Bay for meditation, ritual, and spiritual renewal. Includes visitor guides and Google Maps links."
+        canonical="/sacred-spaces"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Sacred Spaces", url: "https://www.thesoftheartcollective.com/sacred-spaces" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Sacred Spaces", url: "https://thesoftheartcollective.com/sacred-spaces" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

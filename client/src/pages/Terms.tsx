@@ -1,18 +1,24 @@
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SEO from "@/components/SEO";
 
 export default function Terms() {
   return (
     <>
+      <SEO 
+        title="Terms of Service"
+        description="Review the terms of service for Whispers & Wonders. Understand the guidelines for using our spiritual wellness resources."
+        canonical="/terms"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Terms of Service", url: "https://www.thesoftheartcollective.com/terms" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Terms of Service", url: "https://thesoftheartcollective.com/terms" },
       ]} />
       <div className="container py-12 max-w-3xl mx-auto prose-ww">
         <h1 className="text-4xl text-center mb-8" style={{ color: "var(--ww-cream)" }}>Terms of Service</h1>
         <p className="text-sm mb-6" style={{ color: "var(--ww-muted)" }}>Last updated: January 2026</p>
 
         <h2>Acceptance of Terms</h2>
-        <p>By accessing and using Whispers & Wonders (https://www.thesoftheartcollective.com), you accept and agree to be bound by these terms. If you do not agree, please do not use the site.</p>
+        <p>By accessing and using Whispers & Wonders (https://thesoftheartcollective.com), you accept and agree to be bound by these terms. If you do not agree, please do not use the site.</p>
 
         <h2>Nature of Content</h2>
         <p>All tarot readings, spiritual guidance, crystal information, and related content on this site are provided for entertainment, personal reflection, and general wellness purposes only. Nothing on this site constitutes professional medical, psychological, legal, or financial advice. Always consult qualified professionals for matters requiring expert guidance.</p>

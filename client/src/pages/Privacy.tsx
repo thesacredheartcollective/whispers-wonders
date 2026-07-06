@@ -1,18 +1,24 @@
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SEO from "@/components/SEO";
 
 export default function Privacy() {
   return (
     <>
+      <SEO 
+        title="Privacy Policy"
+        description="Read the privacy policy for Whispers & Wonders. Learn how we handle your data and our commitment to your privacy."
+        canonical="/privacy"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Privacy Policy", url: "https://www.thesoftheartcollective.com/privacy" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Privacy Policy", url: "https://thesoftheartcollective.com/privacy" },
       ]} />
       <div className="container py-12 max-w-3xl mx-auto prose-ww">
         <h1 className="text-4xl text-center mb-8" style={{ color: "var(--ww-cream)" }}>Privacy Policy</h1>
         <p className="text-sm mb-6" style={{ color: "var(--ww-muted)" }}>Last updated: January 2026</p>
 
         <h2>Who We Are</h2>
-        <p>This website, Whispers & Wonders, is operated by Kenya Ferguson through The Soft Heart Collective LLC, based in Tampa Bay, Florida. Our website address is: https://www.thesoftheartcollective.com</p>
+        <p>This website, Whispers & Wonders, is operated by Kenya Ferguson through The Soft Heart Collective LLC, based in Tampa Bay, Florida. Our website address is: https://thesoftheartcollective.com</p>
 
         <h2>Information We Collect</h2>
         <p>We collect minimal personal information. If you use our contact form, we collect your name, email address, and message content solely for the purpose of responding to your inquiry. We do not sell, rent, or share this information with third parties.</p>

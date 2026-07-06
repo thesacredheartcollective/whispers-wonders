@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { cards } from "@/data";
 import { useMemo } from "react";
+import SEO from "@/components/SEO";
 import { WebSiteJsonLd, LocalBusinessJsonLd } from "@/components/JsonLd";
 
 export default function Home() {
@@ -8,6 +9,11 @@ export default function Home() {
 
   return (
     <>
+      <SEO 
+        title="Home"
+        description="Discover daily tarot guidance, inspiring stories, thoughtful reflection, and spiritual wellness resources designed to help you reconnect with yourself."
+        canonical="/"
+      />
       <WebSiteJsonLd />
       <LocalBusinessJsonLd />
       {/* Hero */}

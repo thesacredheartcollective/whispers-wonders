@@ -27,16 +27,16 @@ export function WebSiteJsonLd() {
     "@type": "WebSite",
     name: "Whispers & Wonders",
     alternateName: "The Soft Heart Collective",
-    url: "https://www.thesoftheartcollective.com",
+    url: "https://thesoftheartcollective.com",
     description: "A tarot, crystal, and spiritual wellness resource by Kenya Ferguson and The Soft Heart Collective LLC. Explore all 78 tarot cards, crystal guides, events, sacred spaces, and more.",
     publisher: {
       "@type": "Organization",
       name: "The Soft Heart Collective LLC",
-      url: "https://www.thesoftheartcollective.com",
+      url: "https://thesoftheartcollective.com",
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.thesoftheartcollective.com/cards/{search_term_string}",
+      target: "https://thesoftheartcollective.com/cards/{search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -63,23 +63,23 @@ export function BlogPostingJsonLd({
     "@type": "BlogPosting",
     headline: title,
     description,
-    url: `https://www.thesoftheartcollective.com/blog/${slug}`,
+    url: `https://thesoftheartcollective.com/blog/${slug}`,
     datePublished,
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Person",
       name: "Kenya Ferguson",
-      url: "https://www.thesoftheartcollective.com/about",
+      url: "https://thesoftheartcollective.com/about",
       jobTitle: "Tarot Practitioner & Spiritual Wellness Advocate",
     },
     publisher: {
       "@type": "Organization",
       name: "The Soft Heart Collective LLC",
-      url: "https://www.thesoftheartcollective.com",
+      url: "https://thesoftheartcollective.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.thesoftheartcollective.com/blog/${slug}`,
+      "@id": `https://thesoftheartcollective.com/blog/${slug}`,
     },
   };
   if (wordCount) {
@@ -94,7 +94,7 @@ export function LocalBusinessJsonLd() {
     "@type": "LocalBusiness",
     name: "The Soft Heart Collective LLC",
     description: "Tarot readings, crystal guidance, and spiritual wellness resources serving the Tampa Bay area.",
-    url: "https://www.thesoftheartcollective.com",
+    url: "https://thesoftheartcollective.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Tampa Bay",

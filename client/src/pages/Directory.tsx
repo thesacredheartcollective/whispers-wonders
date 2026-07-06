@@ -1,5 +1,6 @@
 import { directory } from "@/data";
 import { useState, useMemo } from "react";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function Directory() {
@@ -25,9 +26,14 @@ export default function Directory() {
 
   return (
     <>
+      <SEO 
+        title="Metaphysical Directory"
+        description="Browse crystal shops, wellness centers, and metaphysical stores in the Tampa Bay area. Find your next favorite spiritual resource."
+        canonical="/directory"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Directory", url: "https://www.thesoftheartcollective.com/directory" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Directory", url: "https://thesoftheartcollective.com/directory" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

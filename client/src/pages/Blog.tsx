@@ -1,13 +1,19 @@
 import { Link } from "wouter";
 import { blogPosts } from "@/data";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function Blog() {
   return (
     <>
+      <SEO 
+        title="Blog"
+        description="Explore long-form guides and articles on tarot, rituals, crystals, and spiritual wellness in Tampa Bay, written by Kenya Ferguson."
+        canonical="/blog"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Blog", url: "https://www.thesoftheartcollective.com/blog" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Blog", url: "https://thesoftheartcollective.com/blog" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

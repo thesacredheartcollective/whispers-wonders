@@ -1,5 +1,6 @@
 import { useParams, Link } from "wouter";
 import { blogPosts } from "@/data";
+import SEO from "@/components/SEO";
 import AuthorBio from "@/components/AuthorBio";
 import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import type { ReactElement } from "react";
@@ -66,6 +67,11 @@ export default function BlogPost() {
 
   return (
     <>
+      <SEO 
+        title={post.title}
+        description={post.excerpt}
+        canonical={`/blog/${post.slug}`}
+      />
       <BlogPostingJsonLd
         title={post.title}
         description={post.excerpt}
@@ -74,9 +80,9 @@ export default function BlogPost() {
         wordCount={post.body.split(/\s+/).length}
       />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Blog", url: "https://www.thesoftheartcollective.com/blog" },
-        { name: post.title, url: `https://www.thesoftheartcollective.com/blog/${post.slug}` },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Blog", url: "https://thesoftheartcollective.com/blog" },
+        { name: post.title, url: `https://thesoftheartcollective.com/blog/${post.slug}` },
       ]} />
       <article className="container py-12 max-w-3xl mx-auto">
         <Link href="/blog" className="text-sm no-underline mb-6 inline-block" style={{ color: "var(--ww-gold)" }}>

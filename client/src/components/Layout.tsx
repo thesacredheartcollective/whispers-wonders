@@ -129,10 +129,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 Whispers & Wonders
               </h4>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--ww-muted)" }}>
+              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ww-muted)" }}>
                 A mystical tarot and spiritual wellness companion for Florida's Tampa Bay area.
                 Created by Kenya Ferguson and The Soft Heart Collective LLC.
               </p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://instagram.com/thesoftheartcollective" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xs no-underline hover:text-[var(--ww-gold)] transition-colors"
+                  style={{ color: "var(--ww-muted)" }}
+                >
+                  Instagram
+                </a>
+                <a 
+                  href="https://facebook.com/thesoftheartcollective" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xs no-underline hover:text-[var(--ww-gold)] transition-colors"
+                  style={{ color: "var(--ww-muted)" }}
+                >
+                  Facebook
+                </a>
+              </div>
             </div>
             <div>
               <h4 className="text-sm uppercase tracking-widest mb-3" style={{ color: "var(--ww-cream)" }}>

@@ -1,6 +1,7 @@
 import { cards } from "@/data";
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function CrystalGuide() {
@@ -31,9 +32,14 @@ export default function CrystalGuide() {
 
   return (
     <>
+      <SEO 
+        title="Crystal Pairing Guide"
+        description="A comprehensive guide to crystals and their tarot pairings. Learn which stones to use with each card to ground and focus your spiritual practice."
+        canonical="/crystal-guide"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Crystal Guide", url: "https://www.thesoftheartcollective.com/crystal-guide" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Crystal Guide", url: "https://thesoftheartcollective.com/crystal-guide" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

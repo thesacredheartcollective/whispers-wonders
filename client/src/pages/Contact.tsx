@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SEO from "@/components/SEO";
 import { trpc } from "@/lib/trpc";
 
 export default function Contact() {
@@ -25,9 +26,14 @@ export default function Contact() {
 
   return (
     <>
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with Kenya Ferguson and The Soft Heart Collective. We'd love to hear your questions, suggestions, or feedback about Whispers & Wonders."
+        canonical="/contact"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Contact", url: "https://www.thesoftheartcollective.com/contact" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Contact", url: "https://thesoftheartcollective.com/contact" },
       ]} />
       <div className="container py-12 max-w-2xl mx-auto">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

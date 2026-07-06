@@ -1,5 +1,6 @@
 import { events } from "@/data";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function Events() {
@@ -7,9 +8,14 @@ export default function Events() {
 
   return (
     <>
+      <SEO 
+        title="Events & Gatherings"
+        description="Discover spiritual events, workshops, and community gatherings in Tampa Bay. Find visitor guides, accessibility info, and practical tips for each event."
+        canonical="/events"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Events", url: "https://www.thesoftheartcollective.com/events" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Events", url: "https://thesoftheartcollective.com/events" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

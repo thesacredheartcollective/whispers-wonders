@@ -1,4 +1,5 @@
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 
 const moonPhases = [
@@ -15,9 +16,14 @@ const moonPhases = [
 export default function MoonCalendar() {
   return (
     <>
+      <SEO 
+        title="Moon Phase Guide"
+        description="Align your tarot practice and rituals with the lunar cycle. Discover the spiritual energy and recommended practices for each moon phase."
+        canonical="/moon-calendar"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Moon Calendar", url: "https://www.thesoftheartcollective.com/moon-calendar" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Moon Calendar", url: "https://thesoftheartcollective.com/moon-calendar" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

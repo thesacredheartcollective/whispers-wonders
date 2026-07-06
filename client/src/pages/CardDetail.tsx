@@ -1,5 +1,6 @@
 import { useParams, Link } from "wouter";
 import { cards, spreads } from "@/data";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function CardDetail() {
@@ -20,10 +21,15 @@ export default function CardDetail() {
 
   return (
     <>
+      <SEO 
+        title={card.name}
+        description={`Learn the meaning, keywords, crystal pairings, and journal prompts for ${card.name} tarot card. Explore its significance in upright and reversed positions.`}
+        canonical={`/cards/${card.slug}`}
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Tarot Cards", url: "https://www.thesoftheartcollective.com/cards" },
-        { name: card.name, url: `https://www.thesoftheartcollective.com/cards/${card.slug}` },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Tarot Cards", url: "https://thesoftheartcollective.com/cards" },
+        { name: card.name, url: `https://thesoftheartcollective.com/cards/${card.slug}` },
       ]} />
       <div className="container py-12 max-w-3xl mx-auto">
         <Link href="/cards" className="text-sm no-underline mb-6 inline-block" style={{ color: "var(--ww-gold)" }}>
@@ -59,17 +65,21 @@ export default function CardDetail() {
 
         {/* Upright Meaning */}
         <h2 className="text-2xl mb-3" style={{ color: "var(--ww-gold)" }}>Upright Meaning</h2>
-        <p className="mb-8 leading-relaxed" style={{ color: "var(--ww-body)" }}>
-          {card.meaning}
-        </p>
+        <div className="mb-8 leading-relaxed" style={{ color: "var(--ww-body)" }}>
+          {card.meaning.split('\n\n').map((para, i) => (
+            <p key={i} className="mb-4">{para}</p>
+          ))}
+        </div>
 
         {/* Reversed Meaning */}
         {card.reversed && (
           <>
             <h2 className="text-2xl mb-3" style={{ color: "var(--ww-gold)" }}>Reversed Meaning</h2>
-            <p className="mb-8 leading-relaxed" style={{ color: "var(--ww-body)" }}>
-              {card.reversed}
-            </p>
+            <div className="mb-8 leading-relaxed" style={{ color: "var(--ww-body)" }}>
+              {card.reversed.split('\n\n').map((para, i) => (
+                <p key={i} className="mb-4">{para}</p>
+              ))}
+            </div>
           </>
         )}
 

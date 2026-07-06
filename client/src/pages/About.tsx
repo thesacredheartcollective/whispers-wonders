@@ -1,12 +1,18 @@
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 
 export default function About() {
   return (
     <>
+      <SEO 
+        title="About Kenya Ferguson"
+        description="Learn about Kenya Ferguson, the founder of The Soft Heart Collective and Whispers & Wonders. Discover our mission to provide accessible spiritual wellness resources in Tampa Bay."
+        canonical="/about"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "About", url: "https://www.thesoftheartcollective.com/about" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "About", url: "https://thesoftheartcollective.com/about" },
       ]} />
       <div className="container py-12 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl text-center mb-8" style={{ color: "var(--ww-cream)" }}>

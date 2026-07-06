@@ -1,16 +1,11 @@
 import { Link } from "wouter";
 import { cards } from "@/data";
 import { useState, useMemo } from "react";
+import SEO from "@/components/SEO";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export default function Cards() {
   const [filter, setFilter] = useState<"all" | "major" | "wands" | "cups" | "swords" | "pentacles">("all");
-
-  const filtered = useMemo(() => {
-    if (filter === "all") return cards;
-    if (filter === "major") return cards.filter(c => c.arcana.startsWith("Major"));
-    return cards.filter(c => c.arcana === "Minor Arcana" && c.keywords?.length && c.slug.includes(filter === "wands" ? "wands" : filter === "cups" ? "cups" : filter === "swords" ? "swords" : "pentacles"));
-  }, [filter]);
 
   const suitFilter = useMemo(() => {
     if (filter === "all") return cards;
@@ -21,9 +16,14 @@ export default function Cards() {
 
   return (
     <>
+      <SEO 
+        title="Tarot Card Meanings"
+        description="Explore the full 78-card tarot deck. Find meanings, keywords, crystal pairings, and journal prompts for every Major and Minor Arcana card."
+        canonical="/cards"
+      />
       <BreadcrumbJsonLd items={[
-        { name: "Home", url: "https://www.thesoftheartcollective.com/" },
-        { name: "Tarot Cards", url: "https://www.thesoftheartcollective.com/cards" },
+        { name: "Home", url: "https://thesoftheartcollective.com/" },
+        { name: "Tarot Cards", url: "https://thesoftheartcollective.com/cards" },
       ]} />
       <div className="container py-12">
         <h1 className="text-4xl md:text-5xl text-center mb-3" style={{ color: "var(--ww-cream)" }}>

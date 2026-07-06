@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 
-const BASE_URL = "https://www.thesoftheartcollective.com";
+const BASE_URL = "https://thesoftheartcollective.com";
 
 export default function CanonicalTag() {
   const [location] = useLocation();
