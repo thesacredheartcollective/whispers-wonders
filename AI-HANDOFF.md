@@ -120,11 +120,56 @@ The Spreads tab was completely non-functional — it only displayed spread names
 
 ## Deployment & Hosting
 
-- **Hosting:** Manus Autoscale (serverless, Cloud Run)
-- **Domain:** thesoftheartcollective.com (custom domain configured)
-- **Build:** `pnpm build` → outputs to `dist/`
+### Hosting Platform
+- **Provider:** Manus WebDev (Autoscale / serverless)
+- **Space ID:** `Zau8dmvozkdrurVQPRoobs`
+- **Domain:** thesoftheartcollective.com (custom domain configured via Manus Settings > Domains)
+- **CDN/SSL:** Automatically provided by Manus hosting
+- **Analytics:** Manus Analytics (manus-analytics.com/umami)
+
+### CRITICAL: Deployment Is NOT Automatic
+
+**Pushing to GitHub does NOT automatically deploy the site.**
+
+The site uses Manus WebDev hosting, which requires a **manual Publish step** within the Manus platform. There is no CI/CD pipeline, no GitHub Actions, and no webhook-based auto-deploy configured.
+
+### How to Deploy (Step-by-Step)
+
+1. **Commit and push code to `main` branch** on GitHub
+   ```bash
+   git add -A && git commit -m "description" && git push origin main
+   ```
+
+2. **Open the Manus task/project** that manages this site
+   - Go to https://manus.im
+   - Navigate to the project: "Whispers & Wonders - Tarot Site"
+
+3. **Trigger a new deployment** by either:
+   - **Option A:** Start a new task in the project asking Manus to "deploy the latest code" or "publish the site"
+   - **Option B:** If the Manus workspace shows the site preview, look for a **"Publish"** or **"Deploy"** button in the site management UI
+   - **Option C:** The site auto-deploys when Manus runs the dev server during a task and the task completes with a checkpoint
+
+4. **Verify deployment** by visiting https://thesoftheartcollective.com and confirming the changes are live
+
+### Build Commands
+- **Build:** `pnpm build` → outputs frontend to `dist/public/` and server to `dist/index.js`
 - **Start:** `pnpm start` → runs Node.js server on port 3000
 - **Dev:** `pnpm dev` → runs dev server with Vite HMR
+- **Type Check:** `pnpm check` → TypeScript validation
+- **Test:** `pnpm test` → Vitest unit tests
+
+### Deployment Verification
+To confirm which version is deployed, check the JS bundle filename in the page source:
+- View source at https://thesoftheartcollective.com
+- Look for `<script src="/assets/index-XXXXXXXX.js">`
+- Compare the hash to your local build output in `dist/public/assets/`
+- If they match, the latest code is deployed
+
+### Important Notes
+- The GitHub repository is the source of truth for code
+- Manus hosting serves the built artifacts, not the GitHub repo directly
+- There is no GitHub webhook or GitHub Actions workflow connecting the two
+- Every deployment requires an explicit action within the Manus platform
 
 ---
 
