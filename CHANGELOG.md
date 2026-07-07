@@ -2,6 +2,50 @@
 
 All notable changes to Whispers & Wonders are documented in this file.
 
+## [2.1.0] - 2026-07-07
+
+### Critical Fix: Tarot Spreads Functionality Restored
+
+**Priority:** Critical production fix  
+**Commit:** ee435b4
+
+#### Root Cause
+The Spreads tab was completely non-functional. The page only displayed spread names with empty position arrays and had zero interactive card-drawing logic. Users could not select a spread, draw cards, or receive any reading.
+
+#### Changes Made
+- **client/src/data/spreads.ts** — Rebuilt with complete spread data for all 10 spreads including position labels, descriptions, and guidance text for each position
+- **client/src/pages/Spreads.tsx** — Complete rebuild as a fully interactive tarot reading experience
+
+#### Features Implemented
+- Spread selection grid with descriptions, card counts, and "best for" guidance
+- Spread detail view showing all positions before drawing
+- Fisher-Yates shuffle algorithm for cryptographically fair card randomization
+- 30% reversed card probability for authentic readings
+- Animated card reveal sequence (one card per 600ms)
+- Expandable card interpretations with full position context
+- Card details include: visual description, keywords, affirmation, journal prompt, crystal associations, upright/reversed meanings
+- Link to full card detail page from each drawn card
+- "Draw Again" button to redraw with new random cards
+- "Choose Different Spread" navigation back to selection
+- "Back to all spreads" navigation from detail view
+- "Reading Complete" summary section with reflective guidance
+- Mobile-responsive design throughout all states
+- Proper state management for all reading phases (selection → detail → drawing → results)
+
+#### All 10 Spreads Verified Working
+1. One-Card Daily Pull (1 card)
+2. Past · Present · Future (3 cards)
+3. Celtic Cross (10 cards)
+4. New Moon Intention Spread (4 cards)
+5. Full Moon Release Spread (3 cards)
+6. Decision-Making Spread (5 cards)
+7. Love & Relationship Spread (7 cards)
+8. Career & Purpose Spread (5 cards)
+9. Shadow Work Spread (4 cards)
+10. Year Ahead Spread (12 cards)
+
+---
+
 ## [2.0.0] - 2026-07-05
 
 ### Major Changes
@@ -140,11 +184,12 @@ All notable changes to Whispers & Wonders are documented in this file.
 
 | Version | Date       | Status      | Notes                              |
 |---------|------------|-------------|----------------------------------|
-| 2.0.0   | 2026-07-05 | Current     | Complete rebuild + homepage update |
+| 2.1.0   | 2026-07-07 | Current     | Critical fix: Spreads functionality restored |
+| 2.0.0   | 2026-07-05 | Previous    | Complete rebuild + homepage update |
 | 1.0.0   | 2026-06-XX | Archived    | Initial scaffold                  |
 
 ---
 
-**Last Updated:** July 5, 2026  
+**Last Updated:** July 7, 2026  
 **Maintained By:** Manus AI Agent & Kenya Ferguson  
 **Repository:** https://github.com/thesacredheartcollective/whispers-wonders
