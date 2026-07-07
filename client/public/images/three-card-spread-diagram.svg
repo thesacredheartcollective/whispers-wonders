@@ -1,0 +1,53 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <title>A Beginner's Three-Card Tarot Spread: Past, Present, Future</title>
+  <desc>Diagram of a simple three-card tarot spread laid left to right: the first position represents the Past, the second the Present, and the third the Future, read together as a single unfolding sentence.</desc>
+
+  <rect width="900" height="480" fill="#faf6ef"/>
+
+  <text x="450" y="55" text-anchor="middle" fill="#4b3b63" font-size="24" font-weight="bold">A Simple Three-Card Spread</text>
+  <text x="450" y="82" text-anchor="middle" fill="#7a6a58" font-size="14" font-style="italic">Read left to right, as a single unfolding sentence</text>
+
+  <!-- Card 1: Past -->
+  <g>
+    <rect x="120" y="130" width="180" height="260" rx="14" fill="#fff" stroke="#6b5480" stroke-width="2.5"/>
+    <circle cx="210" cy="220" r="46" fill="none" stroke="#b89b5e" stroke-width="2.5"/>
+    <path d="M210 190 L210 220 L232 234" stroke="#b89b5e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="210" y="300" text-anchor="middle" fill="#4b3b63" font-size="16" font-weight="bold">1. PAST</text>
+    <text x="210" y="324" text-anchor="middle" fill="#7a6a58" font-size="12">What led</text>
+    <text x="210" y="340" text-anchor="middle" fill="#7a6a58" font-size="12">to this moment</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M310 260 L358 260" stroke="#b89b5e" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Card 2: Present -->
+  <g>
+    <rect x="360" y="130" width="180" height="260" rx="14" fill="#fff" stroke="#6b5480" stroke-width="2.5"/>
+    <circle cx="450" cy="220" r="46" fill="none" stroke="#b89b5e" stroke-width="2.5"/>
+    <circle cx="450" cy="220" r="10" fill="#b89b5e"/>
+    <text x="450" y="300" text-anchor="middle" fill="#4b3b63" font-size="16" font-weight="bold">2. PRESENT</text>
+    <text x="450" y="324" text-anchor="middle" fill="#7a6a58" font-size="12">The energy</text>
+    <text x="450" y="340" text-anchor="middle" fill="#7a6a58" font-size="12">of right now</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M550 260 L598 260" stroke="#b89b5e" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Card 3: Future -->
+  <g>
+    <rect x="600" y="130" width="180" height="260" rx="14" fill="#fff" stroke="#6b5480" stroke-width="2.5"/>
+    <circle cx="690" cy="220" r="46" fill="none" stroke="#b89b5e" stroke-width="2.5"/>
+    <path d="M660 245 Q690 190 720 245" stroke="#b89b5e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="690" y="300" text-anchor="middle" fill="#4b3b63" font-size="16" font-weight="bold">3. FUTURE</text>
+    <text x="690" y="324" text-anchor="middle" fill="#7a6a58" font-size="12">Where the current</text>
+    <text x="690" y="340" text-anchor="middle" fill="#7a6a58" font-size="12">path tends</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#b89b5e"/>
+    </marker>
+  </defs>
+
+  <text x="450" y="440" text-anchor="middle" fill="#4b3b63" font-size="13">Try it with other questions too: Situation · Obstacle · Advice — or Mind · Body · Spirit</text>
+</svg>

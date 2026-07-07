@@ -1,0 +1,66 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <title>The Structure of a Tarot Deck: 78 Cards</title>
+  <desc>Diagram showing a 78-card tarot deck divided into the 22-card Major Arcana and the 56-card Minor Arcana, which splits into four suits of 14 cards each: Wands, Cups, Swords, and Pentacles.</desc>
+
+  <rect width="900" height="560" fill="#faf6ef"/>
+
+  <!-- Root -->
+  <circle cx="450" cy="60" r="46" fill="#4b3b63" />
+  <text x="450" y="54" text-anchor="middle" fill="#faf6ef" font-size="20" font-weight="bold">78</text>
+  <text x="450" y="74" text-anchor="middle" fill="#faf6ef" font-size="12">CARDS</text>
+
+  <!-- Lines from root -->
+  <line x1="450" y1="106" x2="250" y2="170" stroke="#b89b5e" stroke-width="2"/>
+  <line x1="450" y1="106" x2="650" y2="170" stroke="#b89b5e" stroke-width="2"/>
+
+  <!-- Major Arcana -->
+  <circle cx="250" cy="210" r="60" fill="#6b5480"/>
+  <text x="250" y="203" text-anchor="middle" fill="#faf6ef" font-size="17" font-weight="bold">MAJOR</text>
+  <text x="250" y="222" text-anchor="middle" fill="#faf6ef" font-size="17" font-weight="bold">ARCANA</text>
+  <text x="250" y="242" text-anchor="middle" fill="#e7dcc8" font-size="12">22 cards</text>
+  <text x="250" y="290" text-anchor="middle" fill="#4b3b63" font-size="13" font-style="italic">The Fool → The World</text>
+  <text x="250" y="308" text-anchor="middle" fill="#6b5480" font-size="12">Life's big turning points</text>
+
+  <!-- Minor Arcana -->
+  <circle cx="650" cy="210" r="60" fill="#6b5480"/>
+  <text x="650" y="203" text-anchor="middle" fill="#faf6ef" font-size="17" font-weight="bold">MINOR</text>
+  <text x="650" y="222" text-anchor="middle" fill="#faf6ef" font-size="17" font-weight="bold">ARCANA</text>
+  <text x="650" y="242" text-anchor="middle" fill="#e7dcc8" font-size="12">56 cards</text>
+  <text x="650" y="290" text-anchor="middle" fill="#4b3b63" font-size="13" font-style="italic">4 suits of 14 cards</text>
+  <text x="650" y="308" text-anchor="middle" fill="#6b5480" font-size="12">The texture of daily life</text>
+
+  <!-- Lines from Minor to 4 suits -->
+  <line x1="650" y1="336" x2="470" y2="400" stroke="#b89b5e" stroke-width="1.5"/>
+  <line x1="650" y1="336" x2="560" y2="400" stroke="#b89b5e" stroke-width="1.5"/>
+  <line x1="650" y1="336" x2="740" y2="400" stroke="#b89b5e" stroke-width="1.5"/>
+  <line x1="650" y1="336" x2="830" y2="400" stroke="#b89b5e" stroke-width="1.5"/>
+
+  <!-- Suit cards -->
+  <!-- Wands -->
+  <rect x="420" y="410" width="100" height="130" rx="10" fill="#fff" stroke="#c9432c" stroke-width="2"/>
+  <path d="M470 435 L470 495 M462 445 L478 445 M462 465 L478 465" stroke="#c9432c" stroke-width="3" stroke-linecap="round"/>
+  <text x="470" y="520" text-anchor="middle" fill="#c9432c" font-size="13" font-weight="bold">WANDS</text>
+  <text x="470" y="535" text-anchor="middle" fill="#7a6a58" font-size="10">Fire · Creativity</text>
+
+  <!-- Cups -->
+  <rect x="510" y="410" width="100" height="130" rx="10" fill="#fff" stroke="#3b6e91" stroke-width="2"/>
+  <path d="M540 445 Q560 480 580 445 L578 435 L542 435 Z" fill="none" stroke="#3b6e91" stroke-width="3"/>
+  <line x1="560" y1="480" x2="560" y2="495" stroke="#3b6e91" stroke-width="3"/>
+  <text x="560" y="520" text-anchor="middle" fill="#3b6e91" font-size="13" font-weight="bold">CUPS</text>
+  <text x="560" y="535" text-anchor="middle" fill="#7a6a58" font-size="10">Water · Emotion</text>
+
+  <!-- Swords -->
+  <rect x="690" y="410" width="100" height="130" rx="10" fill="#fff" stroke="#7a8a99" stroke-width="2"/>
+  <line x1="740" y1="430" x2="740" y2="490" stroke="#7a8a99" stroke-width="3" stroke-linecap="round"/>
+  <line x1="726" y1="450" x2="754" y2="450" stroke="#7a8a99" stroke-width="3" stroke-linecap="round"/>
+  <text x="740" y="520" text-anchor="middle" fill="#7a8a99" font-size="13" font-weight="bold">SWORDS</text>
+  <text x="740" y="535" text-anchor="middle" fill="#7a6a58" font-size="10">Air · Thought</text>
+
+  <!-- Pentacles -->
+  <rect x="780" y="410" width="100" height="130" rx="10" fill="#fff" stroke="#5f7a4f" stroke-width="2"/>
+  <circle cx="830" cy="465" r="26" fill="none" stroke="#5f7a4f" stroke-width="3"/>
+  <path d="M830 445 L836 460 L852 460 L839 470 L844 486 L830 476 L816 486 L821 470 L808 460 L824 460 Z" fill="#5f7a4f"/>
+  <text x="830" y="520" text-anchor="middle" fill="#5f7a4f" font-size="13" font-weight="bold">PENTACLES</text>
+  <text x="830" y="535" text-anchor="middle" fill="#7a6a58" font-size="10">Earth · Work</text>
+
+</svg>
