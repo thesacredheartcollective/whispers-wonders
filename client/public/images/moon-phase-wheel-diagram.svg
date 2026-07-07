@@ -1,0 +1,87 @@
+<svg viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <title>The Eight Phases of the Moon</title>
+  <desc>Circular diagram showing the eight phases of the lunar cycle in order around a wheel: New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, and Waning Crescent, each paired with its tarot theme.</desc>
+
+  <rect width="700" height="700" fill="#0f1024"/>
+
+  <!-- stars -->
+  <g fill="#e7dcc8" opacity="0.6">
+    <circle cx="60" cy="80" r="1.5"/><circle cx="120" cy="40" r="1"/><circle cx="600" cy="70" r="1.5"/>
+    <circle cx="650" cy="140" r="1"/><circle cx="50" cy="600" r="1.5"/><circle cx="90" cy="650" r="1"/>
+    <circle cx="620" cy="620" r="1.5"/><circle cx="660" cy="560" r="1"/><circle cx="350" cy="30" r="1"/>
+    <circle cx="350" cy="670" r="1"/><circle cx="30" cy="350" r="1"/><circle cx="670" cy="350" r="1"/>
+  </g>
+
+  <circle cx="350" cy="350" r="230" fill="none" stroke="#4b3b63" stroke-width="1.5" stroke-dasharray="2 6"/>
+
+  <!-- Center label -->
+  <text x="350" y="342" text-anchor="middle" fill="#e7dcc8" font-size="20" font-weight="bold">THE LUNAR</text>
+  <text x="350" y="366" text-anchor="middle" fill="#e7dcc8" font-size="20" font-weight="bold">CYCLE</text>
+  <text x="350" y="388" text-anchor="middle" fill="#b89b5e" font-size="12" font-style="italic">29.5 days</text>
+
+  <!-- 8 phase positions, 45deg apart, starting at top (New Moon) going clockwise -->
+  <!-- Positions (cx,cy) around r=230 circle centered 350,350 -->
+
+  <!-- New Moon - top -->
+  <g>
+    <circle cx="350" cy="120" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <text x="350" y="70" text-anchor="middle" fill="#e7dcc8" font-size="13" font-weight="bold">NEW MOON</text>
+    <text x="350" y="86" text-anchor="middle" fill="#b89b5e" font-size="10">Set intentions</text>
+  </g>
+
+  <!-- Waxing Crescent - upper right -->
+  <g>
+    <circle cx="512" cy="188" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M 512 154 A 34 34 0 0 1 512 222 A 44 34 0 0 0 512 154" fill="#e7dcc8"/>
+    <text x="545" y="150" text-anchor="start" fill="#e7dcc8" font-size="13" font-weight="bold">WAXING CRESCENT</text>
+    <text x="545" y="166" text-anchor="start" fill="#b89b5e" font-size="10">Take first steps</text>
+  </g>
+
+  <!-- First Quarter - right -->
+  <g>
+    <circle cx="580" cy="350" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M580 316 A34 34 0 0 1 580 384 Z" fill="#e7dcc8"/>
+    <text x="622" y="345" text-anchor="start" fill="#e7dcc8" font-size="13" font-weight="bold">FIRST QUARTER</text>
+    <text x="622" y="361" text-anchor="start" fill="#b89b5e" font-size="10">Decide, push through</text>
+  </g>
+
+  <!-- Waxing Gibbous - lower right -->
+  <g>
+    <circle cx="512" cy="512" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M 512 478 A 44 34 0 0 1 512 546 A 34 34 0 0 1 512 478" fill="#e7dcc8"/>
+    <text x="545" y="540" text-anchor="start" fill="#e7dcc8" font-size="13" font-weight="bold">WAXING GIBBOUS</text>
+    <text x="545" y="556" text-anchor="start" fill="#b89b5e" font-size="10">Refine, adjust</text>
+  </g>
+
+  <!-- Full Moon - bottom -->
+  <g>
+    <circle cx="350" cy="580" r="34" fill="#e7dcc8" stroke="#b89b5e" stroke-width="2"/>
+    <text x="350" y="638" text-anchor="middle" fill="#e7dcc8" font-size="13" font-weight="bold">FULL MOON</text>
+    <text x="350" y="654" text-anchor="middle" fill="#b89b5e" font-size="10">Release, celebrate</text>
+  </g>
+
+  <!-- Waning Gibbous - lower left -->
+  <g>
+    <circle cx="188" cy="512" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M 188 478 A 34 34 0 0 0 188 546 A 44 34 0 0 1 188 478" fill="#e7dcc8"/>
+    <text x="155" y="540" text-anchor="end" fill="#e7dcc8" font-size="13" font-weight="bold">WANING GIBBOUS</text>
+    <text x="155" y="556" text-anchor="end" fill="#b89b5e" font-size="10">Give thanks, share</text>
+  </g>
+
+  <!-- Last Quarter - left -->
+  <g>
+    <circle cx="120" cy="350" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M120 316 A34 34 0 0 0 120 384 Z" fill="#e7dcc8"/>
+    <text x="78" y="345" text-anchor="end" fill="#e7dcc8" font-size="13" font-weight="bold">LAST QUARTER</text>
+    <text x="78" y="361" text-anchor="end" fill="#b89b5e" font-size="10">Forgive, clear clutter</text>
+  </g>
+
+  <!-- Waning Crescent - upper left -->
+  <g>
+    <circle cx="188" cy="188" r="34" fill="#0f1024" stroke="#4b3b63" stroke-width="2"/>
+    <path d="M 188 154 A 34 34 0 0 0 188 222 A 44 34 0 0 1 188 154" fill="#e7dcc8"/>
+    <text x="155" y="150" text-anchor="end" fill="#e7dcc8" font-size="13" font-weight="bold">WANING CRESCENT</text>
+    <text x="155" y="166" text-anchor="end" fill="#b89b5e" font-size="10">Rest, surrender</text>
+  </g>
+
+</svg>
