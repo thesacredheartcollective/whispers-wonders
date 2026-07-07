@@ -123,7 +123,8 @@ The Spreads tab was completely non-functional — it only displayed spread names
 ### Hosting Platform
 - **Provider:** Manus WebDev (Autoscale / serverless)
 - **Space ID:** `Zau8dmvozkdrurVQPRoobs`
-- **Domain:** thesoftheartcollective.com (custom domain configured via Manus Settings > Domains)
+- **Domain:** thesoftheartcollective.com (Migrating to Vercel)
+- **Vercel CNAME Record:** `0d74173e503e9c47.vercel-dns-017.com` (Required for custom domain verification)
 - **CDN/SSL:** Automatically provided by Manus hosting
 - **Analytics:** Manus Analytics (manus-analytics.com/umami)
 
