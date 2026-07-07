@@ -8,6 +8,7 @@ export const spreads: Spread[] = [
     summary: `A single card to set your intention and focus for the day ahead.`,
     bestFor: `Morning intention, quick check-ins, daily journaling.`,
     positions: [
+      { n: 1, label: "Today's Message", guidance: "This card reflects the energy, lesson, or theme most relevant to your day. Let it guide your intention and awareness." },
     ],
   },
   {
@@ -17,6 +18,9 @@ export const spreads: Spread[] = [
     summary: `The classic three-card spread tracing the arc of a situation through time.`,
     bestFor: `General readings, understanding how a situation is evolving.`,
     positions: [
+      { n: 1, label: "Past", guidance: "What has led you to this moment. The foundation, root cause, or influence from your history that shapes the present." },
+      { n: 2, label: "Present", guidance: "Where you stand right now. The current energy, challenge, or opportunity you are navigating." },
+      { n: 3, label: "Future", guidance: "Where things are heading if you continue on this path. The likely outcome or emerging energy." },
     ],
   },
   {
@@ -26,6 +30,16 @@ export const spreads: Spread[] = [
     summary: `A comprehensive ten-card spread for deep insight into a complex question.`,
     bestFor: `Major life questions, layered situations needing full context.`,
     positions: [
+      { n: 1, label: "Present Situation", guidance: "The heart of the matter — the central issue or energy you are experiencing right now." },
+      { n: 2, label: "Challenge / Crossing", guidance: "What is blocking or complicating the situation. The obstacle or opposing force." },
+      { n: 3, label: "Foundation", guidance: "The subconscious root or underlying cause. What lies beneath the surface of this situation." },
+      { n: 4, label: "Recent Past", guidance: "Events or energies that have just passed but still influence the present moment." },
+      { n: 5, label: "Crown / Best Outcome", guidance: "The highest potential or best possible outcome available to you in this situation." },
+      { n: 6, label: "Near Future", guidance: "What is approaching. The energy or event that will manifest in the coming days or weeks." },
+      { n: 7, label: "Your Attitude", guidance: "How you see yourself in this situation. Your self-perception, fears, or hopes." },
+      { n: 8, label: "External Influences", guidance: "How others see you or external forces affecting the outcome. Environment and relationships." },
+      { n: 9, label: "Hopes & Fears", guidance: "Your deepest hopes or fears about this situation — often they are two sides of the same coin." },
+      { n: 10, label: "Final Outcome", guidance: "The culmination of all energies at play. The most likely result given the current trajectory." },
     ],
   },
   {
@@ -35,6 +49,10 @@ export const spreads: Spread[] = [
     summary: `Four cards to clarify and plant intentions at the start of a lunar cycle.`,
     bestFor: `New moon rituals, fresh starts, goal-setting.`,
     positions: [
+      { n: 1, label: "What to Release", guidance: "What energy, habit, or belief from the last cycle needs to be released to make space for the new." },
+      { n: 2, label: "What to Invite In", guidance: "The energy or intention to welcome into your life during this new lunar cycle." },
+      { n: 3, label: "Action to Take", guidance: "A practical step or behavior that will support your intention this month." },
+      { n: 4, label: "Message from Spirit", guidance: "Guidance from your higher self or the universe to carry with you through this cycle." },
     ],
   },
   {
@@ -44,6 +62,9 @@ export const spreads: Spread[] = [
     summary: `Three cards for letting go and celebrating at the peak of the lunar cycle.`,
     bestFor: `Full moon rituals, releasing, gratitude.`,
     positions: [
+      { n: 1, label: "What Has Bloomed", guidance: "What has come to fruition or completion since the new moon. Celebrate this growth." },
+      { n: 2, label: "What to Release", guidance: "What is ready to be released under the full moon's illuminating light. Let it go with gratitude." },
+      { n: 3, label: "Gratitude Message", guidance: "A message of gratitude and acknowledgment from the universe for the work you have done." },
     ],
   },
   {
@@ -53,6 +74,11 @@ export const spreads: Spread[] = [
     summary: `Five cards to weigh a choice and reveal the path toward clarity.`,
     bestFor: `Crossroads, weighing two options, gaining perspective.`,
     positions: [
+      { n: 1, label: "The Core Issue", guidance: "The true nature of the decision you face. What is really at stake beneath the surface." },
+      { n: 2, label: "Option A", guidance: "The energy, outcome, and lessons associated with the first path or choice." },
+      { n: 3, label: "Option B", guidance: "The energy, outcome, and lessons associated with the second path or choice." },
+      { n: 4, label: "What You Need to Know", guidance: "Hidden information or perspective that will help you decide. What you may be overlooking." },
+      { n: 5, label: "Guidance", guidance: "The card's counsel on how to approach this decision with wisdom and alignment." },
     ],
   },
   {
@@ -62,6 +88,13 @@ export const spreads: Spread[] = [
     summary: `Seven cards exploring the heart of a connection and its potential.`,
     bestFor: `Romantic relationships, partnerships, reconnecting.`,
     positions: [
+      { n: 1, label: "You in This Connection", guidance: "Your current energy, feelings, and role within this relationship." },
+      { n: 2, label: "Your Partner / The Other", guidance: "Their energy, feelings, and role. How they are showing up in this connection." },
+      { n: 3, label: "The Foundation", guidance: "What holds this relationship together. The shared ground or bond between you." },
+      { n: 4, label: "The Challenge", guidance: "The current tension, misunderstanding, or growth edge in the relationship." },
+      { n: 5, label: "What You Need", guidance: "What you need from this connection to feel fulfilled, safe, and valued." },
+      { n: 6, label: "What They Need", guidance: "What the other person needs from this connection to feel fulfilled and valued." },
+      { n: 7, label: "The Potential", guidance: "Where this relationship is heading. The highest potential available if both partners grow." },
     ],
   },
   {
@@ -71,6 +104,11 @@ export const spreads: Spread[] = [
     summary: `Five cards to illuminate your work, calling, and next steps.`,
     bestFor: `Career decisions, finding purpose, professional growth.`,
     positions: [
+      { n: 1, label: "Current Career Energy", guidance: "How you currently relate to your work. Your present professional state and feelings." },
+      { n: 2, label: "Your True Calling", guidance: "What your soul is drawn toward. The work that aligns with your deeper purpose." },
+      { n: 3, label: "What's Blocking You", guidance: "The fear, belief, or circumstance preventing you from stepping into your purpose." },
+      { n: 4, label: "Your Strength", guidance: "The skill, talent, or quality you already possess that will carry you forward." },
+      { n: 5, label: "Next Step", guidance: "The immediate action or shift that will move you closer to fulfilling work." },
     ],
   },
   {
@@ -80,6 +118,10 @@ export const spreads: Spread[] = [
     summary: `Four cards for compassionate inner work and integration.`,
     bestFor: `Healing, self-reflection, working with difficult emotions.`,
     positions: [
+      { n: 1, label: "The Shadow", guidance: "The hidden aspect of yourself seeking attention. What you have been avoiding or suppressing." },
+      { n: 2, label: "Its Origin", guidance: "Where this shadow pattern began. The wound, experience, or belief that created it." },
+      { n: 3, label: "What It Teaches", guidance: "The lesson or gift hidden within this shadow. What it is trying to show you." },
+      { n: 4, label: "Integration", guidance: "How to compassionately integrate this shadow. The path toward wholeness and self-acceptance." },
     ],
   },
   {
@@ -89,6 +131,18 @@ export const spreads: Spread[] = [
     summary: `Twelve cards — one for each month — to map the energy of the year.`,
     bestFor: `New Year, birthdays, long-range planning.`,
     positions: [
+      { n: 1, label: "January", guidance: "The theme and energy for the first month. How the year begins." },
+      { n: 2, label: "February", guidance: "The theme and energy for February. What emerges as winter continues." },
+      { n: 3, label: "March", guidance: "The theme and energy for March. The first stirrings of spring and renewal." },
+      { n: 4, label: "April", guidance: "The theme and energy for April. Growth, change, and new beginnings." },
+      { n: 5, label: "May", guidance: "The theme and energy for May. Blossoming and expansion." },
+      { n: 6, label: "June", guidance: "The theme and energy for June. The midpoint of the year and its turning." },
+      { n: 7, label: "July", guidance: "The theme and energy for July. Summer's fullness and vitality." },
+      { n: 8, label: "August", guidance: "The theme and energy for August. Harvesting what you have sown." },
+      { n: 9, label: "September", guidance: "The theme and energy for September. Transition and preparation." },
+      { n: 10, label: "October", guidance: "The theme and energy for October. Reflection and inner work." },
+      { n: 11, label: "November", guidance: "The theme and energy for November. Gratitude and release." },
+      { n: 12, label: "December", guidance: "The theme and energy for December. Completion and rest." },
     ],
   },
 ];
