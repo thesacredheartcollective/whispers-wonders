@@ -26,7 +26,6 @@ import NotFound from "./pages/NotFound";
 
 // Layout
 import Layout from "./components/Layout";
-import CanonicalTag from "./components/CanonicalTag";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -40,7 +39,6 @@ function Router() {
   return (
     <>
       <ScrollToTop />
-      <CanonicalTag />
       <Layout>
         <Switch>
           <Route path="/" component={Home} />

@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { cards } from "@/data";
 import { useMemo } from "react";
 import SEO from "@/components/SEO";
-import { WebSiteJsonLd, LocalBusinessJsonLd } from "@/components/JsonLd";
+import { WebSiteJsonLd, LocalBusinessJsonLd, OrganizationJsonLd } from "@/components/JsonLd";
 
 export default function Home() {
   const randomCard = useMemo(() => cards[Math.floor(Math.random() * cards.length)], []);
@@ -15,6 +15,7 @@ export default function Home() {
         canonical="/"
       />
       <WebSiteJsonLd />
+      <OrganizationJsonLd />
       <LocalBusinessJsonLd />
       {/* Hero */}
       <section className="py-20 md:py-32 text-center">

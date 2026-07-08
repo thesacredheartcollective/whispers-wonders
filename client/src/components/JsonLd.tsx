@@ -88,6 +88,22 @@ export function BlogPostingJsonLd({
   return <JsonLd data={data} />;
 }
 
+export function OrganizationJsonLd() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "The Soft Heart Collective LLC",
+    alternateName: "Whispers & Wonders",
+    url: "https://thesoftheartcollective.com",
+    founder: {
+      "@type": "Person",
+      name: "Kenya Ferguson",
+    },
+    description: "A tarot, crystal, and spiritual wellness resource serving the Tampa Bay area and beyond.",
+  };
+  return <JsonLd data={data} />;
+}
+
 export function LocalBusinessJsonLd() {
   const data = {
     "@context": "https://schema.org",
