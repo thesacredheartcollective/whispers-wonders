@@ -1,0 +1,62 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#FBF7F2"/>
+      <stop offset="100%" stop-color="#F1E9DE"/>
+    </radialGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#A98F6E"/>
+    </marker>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+
+  <!-- Outer guide ring -->
+  <circle cx="300" cy="300" r="215" fill="none" stroke="#C9B8A8" stroke-width="1" stroke-dasharray="2,5"/>
+
+  <!-- Curved arrows connecting the 5 steps around the circle -->
+  <path d="M 300,88 A 212,212 0 0,1 501,240" fill="none" stroke="#A98F6E" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 501,240 A 212,212 0 0,1 425,470" fill="none" stroke="#A98F6E" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 425,470 A 212,212 0 0,1 175,470" fill="none" stroke="#A98F6E" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 175,470 A 212,212 0 0,1 99,240" fill="none" stroke="#A98F6E" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 99,240 A 212,212 0 0,1 292,88" fill="none" stroke="#A98F6E" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Inner circle -->
+  <circle cx="300" cy="300" r="70" fill="#FBF7F2" stroke="#B7A493" stroke-width="1.5"/>
+  <text x="300" y="292" text-anchor="middle" font-size="14" fill="#6B5645" letter-spacing="1">THE DAILY</text>
+  <text x="300" y="312" text-anchor="middle" font-size="14" fill="#6B5645" letter-spacing="1">RITUAL LOOP</text>
+  <text x="300" y="332" text-anchor="middle" font-size="10.5" fill="#8A7A66" font-style="italic">five quiet minutes</text>
+
+  <!-- Step 1: top - Shuffle & Ask -->
+  <circle cx="300" cy="88" r="30" fill="#E8D9C5" stroke="#A98F6E" stroke-width="1"/>
+  <text x="300" y="93" text-anchor="middle" font-size="11" fill="#5C4A38" font-weight="bold">1</text>
+  <text x="300" y="135" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Shuffle &amp; Ask</text>
+  <text x="300" y="150" text-anchor="middle" font-size="10.5" fill="#5C4A38">"What do I need today?"</text>
+
+  <!-- Step 2: upper right - Draw One Card -->
+  <circle cx="501" cy="240" r="30" fill="#D9C7B8" stroke="#A98F6E" stroke-width="1"/>
+  <text x="501" y="245" text-anchor="middle" font-size="11" fill="#5C4A38" font-weight="bold">2</text>
+  <text x="501" y="285" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Draw One Card</text>
+  <text x="501" y="300" text-anchor="middle" font-size="10.5" fill="#5C4A38">sit with the image</text>
+
+  <!-- Step 3: lower right - Speak the Affirmation -->
+  <circle cx="425" cy="470" r="30" fill="#CBB9C9" stroke="#A98F6E" stroke-width="1"/>
+  <text x="425" y="475" text-anchor="middle" font-size="11" fill="#5C4A38" font-weight="bold">3</text>
+  <text x="425" y="518" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Speak the</text>
+  <text x="425" y="533" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Affirmation</text>
+
+  <!-- Step 4: lower left - Journal One Line -->
+  <circle cx="175" cy="470" r="30" fill="#C7CBB9" stroke="#A98F6E" stroke-width="1"/>
+  <text x="175" y="475" text-anchor="middle" font-size="11" fill="#5C4A38" font-weight="bold">4</text>
+  <text x="175" y="518" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Journal</text>
+  <text x="175" y="533" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">One Line</text>
+
+  <!-- Step 5: upper left - Return Tomorrow -->
+  <circle cx="99" cy="240" r="30" fill="#E0DCC5" stroke="#A98F6E" stroke-width="1"/>
+  <text x="99" y="245" text-anchor="middle" font-size="11" fill="#5C4A38" font-weight="bold">5</text>
+  <text x="99" y="285" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Return</text>
+  <text x="99" y="300" text-anchor="middle" font-size="12" fill="#5C4A38" font-weight="bold">Tomorrow</text>
+
+  <!-- Caption -->
+  <text x="300" y="565" text-anchor="middle" font-size="10.5" fill="#8A7A66" font-style="italic">Whispers &amp; Wonders</text>
+  <text x="300" y="580" text-anchor="middle" font-size="10.5" fill="#8A7A66" font-style="italic">the practice is the returning, not the streak</text>
+</svg>

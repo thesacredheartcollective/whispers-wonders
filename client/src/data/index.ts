@@ -76,9 +76,11 @@ export type BlogPost = {
   slug: string;
   title: string;
   excerpt: string;
+  metaDescription?: string;
   date: string;
   author: string;
   readMinutes: number;
   tags: string[];
   body: string;
+  authorBio?: string;
 };

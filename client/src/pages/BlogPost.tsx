@@ -98,6 +98,22 @@ function renderInlineMarkdown(text: string): ReactElement | string {
     });
   }
 
+  // Match italic text: *text* (but not **text**)
+  const italicRegex = /(?<!\*)\*([^*]+)\*(?!\*)/g;
+  let italicMatch;
+  const italicMatches: Array<{ index: number; length: number; text: string }> = [];
+  while ((italicMatch = italicRegex.exec(text)) !== null) {
+    // Skip if this is part of a bold match
+    const isPartOfBold = boldMatches.some(b => italicMatch!.index >= b.index && italicMatch!.index < b.index + b.length);
+    if (!isPartOfBold) {
+      italicMatches.push({
+        index: italicMatch.index,
+        length: italicMatch[0].length,
+        text: italicMatch[1],
+      });
+    }
+  }
+
   // Match links: [text](url)
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
   let linkMatch;
@@ -114,6 +130,7 @@ function renderInlineMarkdown(text: string): ReactElement | string {
   // Combine and sort all matches
   const allMatches = [
     ...boldMatches.map((m) => ({ ...m, type: "bold" })),
+    ...italicMatches.map((m) => ({ ...m, type: "italic" })),
     ...linkMatches.map((m) => ({ ...m, type: "link" })),
   ].sort((a, b) => a.index - b.index);
 
@@ -129,6 +146,10 @@ function renderInlineMarkdown(text: string): ReactElement | string {
       if (match.type === "bold") {
         parts.push(
           <strong key={`bold-${match.index}`}>{match.text}</strong>
+        );
+      } else if (match.type === "italic") {
+        parts.push(
+          <em key={`italic-${match.index}`}>{match.text}</em>
         );
       } else if (match.type === "link") {
         const url = (match as any).url;
@@ -176,12 +197,12 @@ export default function BlogPost() {
     <>
       <SEO 
         title={post.title}
-        description={post.excerpt}
+        description={post.metaDescription || post.excerpt}
         canonical={`/blog/${post.slug}`}
       />
       <BlogPostingJsonLd
         title={post.title}
-        description={post.excerpt}
+        description={post.metaDescription || post.excerpt}
         slug={post.slug}
         datePublished={post.date}
         wordCount={post.body.split(/\s+/).length}
@@ -221,7 +242,7 @@ export default function BlogPost() {
         </div>
 
         {/* Author Bio */}
-        <AuthorBio />
+        <AuthorBio bio={post.authorBio} />
       </article>
     </>
   );

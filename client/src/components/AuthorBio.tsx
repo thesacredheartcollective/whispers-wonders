@@ -1,4 +1,6 @@
-export default function AuthorBio() {
+const DEFAULT_BIO = "Kenya Ferguson is a tarot practitioner, crystal worker, and spiritual wellness advocate based in Tampa Bay, Florida. With over a decade of personal practice and community facilitation, she created Whispers & Wonders to make tarot and metaphysical resources accessible, inclusive, and grounded in genuine experience. Her approach blends traditional card symbolism with intuitive guidance, always emphasizing personal empowerment over prediction.";
+
+export default function AuthorBio({ bio }: { bio?: string }) {
   return (
     <aside
       className="mt-12 p-6 rounded-xl"
@@ -19,7 +21,7 @@ export default function AuthorBio() {
             Founder, The Soft Heart Collective LLC
           </p>
           <p className="text-sm leading-relaxed" style={{ color: "var(--ww-body)" }}>
-            Kenya Ferguson is a tarot practitioner, crystal worker, and spiritual wellness advocate based in Tampa Bay, Florida. With over a decade of personal practice and community facilitation, she created Whispers & Wonders to make tarot and metaphysical resources accessible, inclusive, and grounded in genuine experience. Her approach blends traditional card symbolism with intuitive guidance, always emphasizing personal empowerment over prediction.
+            {bio || DEFAULT_BIO}
           </p>
           <div className="flex gap-3 mt-3">
             <a
